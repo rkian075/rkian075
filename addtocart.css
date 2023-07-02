@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.sidebar {
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+
+.header {
+  height: 80px;
+  width: 100%;
+  max-width: 70%;
+  background-color: brown;
+  border-radius: 3px;
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+.bi-cart {
+  color: goldenrod;
+  margin-right: 5px;
+}
+
+.cart a {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: goldenrod;
+  color: white;
+  margin-left: 5px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 70%;
+  margin-bottom: 30px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap; /* Prevent line breaks */
+  flex-wrap: wrap;
+}
+
+#root {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  flex-basis: 100%;
+}
+
+.sidebar {
+  width: 40%;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.head {
+  background-color: green;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.img-box {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+
+h2 {
+  font-size: 20px;
+  color: bl;
+}
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color:green;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowing {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+
+.bi-trash-fill {
+  color: goldenrod;
+}
+
+.bi-trash-fill:hover {
+  cursor: pointer;
+  color: brown; 
+}
+.box {
+ 
+  width: 100%; 
+  padding: 20px; 
+  margin: 0 auto; 
+}
+.receipt-widget {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.receipt-widget h2 {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.receipt-widget pre {
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.receipt-widget button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.payment-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Responsive styles for h3 */
+.payment-methods h3 {
+  font-size: clamp(16px, 4vw, 24px);
+  margin-bottom: clamp(10px, 2vw, 20px);
+}
+
+/* Responsive styles for label */
+.payment-methods label {
+  font-size: clamp(12px, 2.5vw, 18px);
+  margin-bottom: clamp(6px, 1.5vw, 12px);
+}
+
+/* Responsive styles for input */
+.payment-methods input {
+  font-size: clamp(12px, 2.5vw, 16px);
+  padding: clamp(6px, 1.5vw, 10px);
+  margin-bottom: clamp(10px, 2vw, 16px);
+}
+
+/* Responsive styles for button */
+.payment-methods button {
+  font-size: clamp(14px, 3vw, 18px);
+  padding: clamp(8px, 2vw, 12px);
+  margin-top: clamp(10px, 2vw, 16px);
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .img-box {
+      width: 80px;
+      height: 140px;
+  }
+  .box {
+    
+    max-width: 500px; 
+  }
+   /* Styles for devices with maximum width of 768px */
+
+  /* Adjustments for container */
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjustments for payment selection */
+  #paymentSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Adjustments for payment widget */
+  #paymentWidget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Adjustments for payment content */
+  #paymentContent {
+    text-align: center;
+  }
+
+  /* Adjustments for receipt content */
+  #receiptContent {
+    text-align: center;
+  }
+
+  /* Adjustments for input fields */
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Adjustments for buttons */
+  button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Adjustments for receipt widget */
+  #receiptWidget {
+    display: block;
+  }
+
+  /* Adjustments for receipt widget button */
+  #receiptWidget button {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Adjustments for heading elements */
+  .foot h1, .foot h2 {
+    font-size: 14px;
+  }
+
+  /* Adjustments for anchor tags within cart items */
+  .cartItem a {
+    font-size: clamp(7px,14px,105px);
+  }
+
+  /* Adjustments for paragraph elements within head class */
+  .head p {
+    font-size: clamp(7px,14px,105px);
+  }
+
+  /* Adjustments for paragraph elements within box class */
+  .box p {
+    font-size: clamp(7px,14px,105px);
+  }
+
+  /* Adjustments for box class */
+  .box {
+    width: clamp(300px, 50%, 400px);
+  }
+
+  /* Adjustments for heading elements within box class */
+  .box h2 {
+    font-size: clamp(8px,16px,105px);
+    ;
+  }
+
+  /* Adjustments for image box class */
+  .img-box {
+    min-height: 120px;
+    max-height: 400px;
+    height: clamp(200px, 50vh, 400px);
+  }
+  .paymentWidget h3, label{
+    font-size: clamp(7px,20px,105px);
+  }
+  
+}
+/* MEDIA FOR ADD TO CART */
+@media (min-width: 768px) {
+  .container {
+      flex-wrap: nowrap;
+  }
+  
+  #root {
+      flex-basis: 70%;
+  }
+  
+  .sidebar {
+      flex-basis: 30%;
+      margin-top: 0;
+      margin-left: 20px;
+  }
+  .payment-methods h3 {
+    font-size: clamp(10px, 3vw, 24px);
+  }
+  
+  /* Responsive styles for label */
+  .payment-methods label {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+  
+}
+
+/* Additional styles for demonstration purposes */
+
+.head, .foot {
+  padding: 10px;
+}
+
+#cartItem {
+  padding: 0 1em;
+}
+
+#total {
+  margin-top: 5px;
+  font-size: clamp(7px,20px,105px);
+}
